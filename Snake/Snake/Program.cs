@@ -12,6 +12,3 @@ namespace Snake
         {
             Console.WriteLine("DUCK KRA KRA");
             Console.ReadLine();
-        }
-    }
-}
