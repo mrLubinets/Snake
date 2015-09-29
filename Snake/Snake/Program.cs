@@ -24,9 +24,10 @@ namespace Snake
 
             //Draw point snake
 
-            Point_k p = new Point_k(4,5,'*');
-            Snake snake = new Snake(p,20,Direction.LEFT);
+            Point_k p = new Point_k(1,1,'*');
+            Snake snake = new Snake(p,20,Direction.RIGHT);
             snake.drow();
+            snake.Move();
 
             Console.ReadLine();   
         }
