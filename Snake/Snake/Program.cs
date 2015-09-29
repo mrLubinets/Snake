@@ -28,7 +28,17 @@ namespace Snake
             Snake snake = new Snake(p,20,Direction.RIGHT);
             snake.drow();
             snake.Move();
+            //Loop  control snake
 
+            while (true) {
+
+                if (Console.KeyAvailable) {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    snake.ControlSnake(key.Key);
+                }
+                System.Threading.Thread.Sleep(100);
+                snake.Move();
+            }
             Console.ReadLine();   
         }
 
