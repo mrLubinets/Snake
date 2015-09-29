@@ -20,6 +20,14 @@ namespace Snake
             line_x_down.drow();
             line_y_l.drow();
             line_y_r.drow();
+
+
+            //Draw point snake
+
+            Point_k p = new Point_k(4,5,'*');
+            Snake snake = new Snake(p,20,Direction.LEFT);
+            snake.drow();
+
             Console.ReadLine();   
         }
 
