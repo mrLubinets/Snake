@@ -10,22 +10,17 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            
+            Console.SetBufferSize(80,25);
 
-            Point_k p1 = new Point_k(1,10,'!');
-            p1.draw();
-
-            Point_k p2 = new Point_k(10,16,'f');
-            p2.draw();
-
-            HorizontalLine line_x = new HorizontalLine(1,4,5,'#');
-            line_x.drow();
-
-            VerticalLine line_y = new VerticalLine(1, 4, 5, '#');
-            line_y.drow();
-            Console.ReadLine();
-
-            
+            HorizontalLine line_x_up = new HorizontalLine(0,78,0,'#');
+            HorizontalLine line_x_down = new HorizontalLine(0, 78, 24, '#');
+            VerticalLine line_y_l = new VerticalLine(0, 24, 78, '#');
+            VerticalLine line_y_r = new VerticalLine(0, 24, 0, '#');
+            line_x_up.drow();
+            line_x_down.drow();
+            line_y_l.drow();
+            line_y_r.drow();
+            Console.ReadLine();   
         }
 
 

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class VerticalLine
+    class VerticalLine :Figure
     {
-        List<Point_k> pList;
+       
 
         public  VerticalLine(int yLeft, int yRight, int x, char sym) {
 
@@ -21,13 +21,6 @@ namespace Snake
 
 
         }
-
-        public void drow() {
-            foreach (Point_k p in pList) {
-                p.draw();
-            }
-        }
-
 
     }
 }
