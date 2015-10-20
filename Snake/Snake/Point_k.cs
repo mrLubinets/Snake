@@ -8,7 +8,8 @@ namespace Snake
 {
     class Point_k
     {
-        public int x, y;
+        public int x;
+        public int y;
         public char sym;
 
         public Point_k(int _x, int _y, char _sym)
@@ -58,6 +59,10 @@ namespace Snake
         public override string ToString()
         {
             return x + "," + y + "," + sym;
+        }
+
+        public bool IsHit(Point_k p) {
+            return p.x == this.x && p.y == this.y;
         }
     }
 
